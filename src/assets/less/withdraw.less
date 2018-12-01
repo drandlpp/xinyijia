@@ -1,0 +1,163 @@
+.wd-container{
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  .wd-chose-card{
+    width: 94%;
+    padding: .1rem 3%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .wd-c-img{
+      width: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        display: block;
+        max-width: .9rem;
+        height: auto;
+      }
+    }
+    .wd-c-info{
+      width: 70%;
+      p{
+        line-height: .4rem;
+        &.c-name{
+          font-size: 0.273rem;
+          color: #222222;
+        }
+        &.c-num{
+          font-size: 0.239rem;
+          color: #999999;
+        }
+      }
+    }
+  }
+  .wd-center{
+    width: 94%;
+    padding: .15rem 3% 0.05rem;
+    background: white;
+    margin-top: .2rem;
+    .wd-count,
+    .wd-balance{
+      font-size: 0.239rem;
+      padding: .15rem 0 .15rem;
+      color: #666666;
+      span{
+        color: #ff3b30;
+        margin: 0 .1rem;
+        font-size: .3rem;
+      }
+    }
+    .wd-num{
+      border-bottom: 1px #e2e2e2 solid;
+      padding: .1rem 0;
+      *{
+        vertical-align: bottom;
+      }
+      span{
+        font-size: 0.495rem;
+        color: #222222;
+        margin: 0 .15rem;
+      }
+      input{
+        width: 70%;
+        border: none;
+        background: none;
+        font-size: 0.638rem;
+        color: #222222;
+      }
+    }
+    .wd-balance{
+
+    }
+  }
+  .wd-btn{
+    width: 5.888rem;
+    height: 0.753rem;
+    background-color: #4f98f5;
+    border-radius: 0.085rem;
+    display: block;
+    margin:.35rem auto;
+    font-size: 0.307rem;
+    color: #ffffff;
+  }
+}
+.wdr-container{
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  .wdr-center{
+    width: 94%;
+    height: auto;
+    padding: .2rem 3%;
+    background: white;
+    img{}
+    ul{
+      li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px #e2e2e2 solid;
+        .wdr-card-img{
+          width: 1rem;
+          border-radius: 50%;
+          overflow: hidden;
+          img{
+            display: block;
+            width: 1rem;
+            height: auto;
+            margin: 0 auto;
+          }
+        }
+        .wdr-info{
+          width: 4.8rem;
+          height: auto;
+          p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: .08rem 0;
+            &.wdr-info-card{
+              .wic-name{
+                font-size: 0.256rem;
+                color: #222222;
+                i{
+                  font-size: .2rem;
+                  color: #ff3b30;
+                }
+              }
+            }
+            &.wdr-info-cost{
+              font-size: 0.205rem;
+              margin: .1rem 0!important;
+              .wic-cost{
+                color: #222222;
+              }
+              .wic-status{
+                i{
+                  &.wic-pass{
+                    color: #222222;
+                  }
+                  &.wic-wait{
+                    color: #4f98f5;
+                  }
+                  &.wic-reject{
+                    color: #ff3b30;
+                  }
+                }
+              }
+            }
+            &.wdr-time{
+              font-size: 0.188rem;
+              color: #999999;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

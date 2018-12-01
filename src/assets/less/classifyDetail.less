@@ -1,0 +1,180 @@
+.cd-container{
+  width: 100%;
+  height:auto;
+  margin: 1rem auto 0;
+  //overflow: scroll;
+  //position: fixed;
+  //top: 1rem;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0.2rem;
+    background: white;
+    //height: 9.9rem;
+    //overflow: scroll;
+    li{
+      width: 49%;
+      margin-bottom: .15rem;
+      border: 1px solid rgba(204, 204, 204, 0.21);
+      border-radius: 5px;
+      background-color: #fff;
+      padding: .15rem 0 .1rem;
+      .cd-goods-img{
+        width: 100%;
+        height: 2.816rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img{
+          display: block;
+          max-width: 2.7rem;
+          border-radius: .1rem;
+          //margin: 0 auto;
+        }
+      }
+      /*img{
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+      }*/
+      .cd-goods-name{
+        width: 2.209rem;
+        padding: 0.068rem 0.128rem;
+        height: auto;
+        background-color: #4f98f5;
+        border-radius: 0.188rem;
+        margin: 0.171rem auto 0.162rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp:2;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        font-size: 0.239rem;
+        color: #ffffff;
+      }
+      .goods-price{
+        width: 2.526rem;
+        height: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        p{
+          width: 50%;
+          text-align: center;
+          *{
+            vertical-align: middle;
+          }
+          span{
+            font-size: 0.222rem;
+            color: #6e6e70;
+          }
+        }
+      }
+      .goods-price-integral{
+        width: 95%;
+        text-align: center;
+        height: 1.2rem;
+        margin: 0 auto;
+        .goods-price-rmb{
+          width: 2.219rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0rem auto .12rem;
+          font-family: MicrosoftYaHei;
+          font-size: 0.273rem;
+          font-weight: bolder;
+          color: #ff3b30;
+          text-align: center;
+
+          span{
+            margin-right: .1rem;
+          }
+          u{
+            font-size: .2rem;
+            font-weight: normal;
+            text-decoration: none;
+            color: #4f98f5;
+          }
+        }
+        h3{
+          width: 2.219rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          font-size: .2rem;
+          text-align: left;
+          padding-left: .3rem;
+          color: #4f98f5;
+          span{
+            color: #888888;
+          }
+        }
+        div{
+          padding-top: .05rem;
+          text-align: center;
+          //display: flex;
+          //flex-wrap: wrap;
+          //justify-content: space-around;
+          *{
+            vertical-align: middle;
+          }
+          p{
+            display: inline-block;
+            font-size: .22rem;
+            &.spec{
+              display: inline-block;
+            }
+            span{
+              font-size: .22rem;
+            }
+            .price-rmb{
+              font-size: .26rem;
+              margin-right: .05rem;
+            }
+          }
+          u{
+            text-decoration: none;
+            font-size: .27rem;
+          }
+        }
+      }
+      .goods-price-rmb{
+        width: 2.219rem;
+        //height: 1.2rem;
+        display: flex;
+        //align-items: center;
+        margin: 0.162rem auto .188rem;
+        font-family: MicrosoftYaHei;
+        font-size: 0.273rem;
+        font-weight: bolder;
+        color: #ff3b30;
+        span{
+          margin-right: .1rem;
+        }
+      }
+    }
+  }
+}
+.goods-price-rmbs{
+  width: 2.219rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 0.162rem auto .188rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.273rem;
+  font-weight: bolder;
+  color: #ff3b30;
+  span{
+    margin-right: .1rem;
+  }
+}

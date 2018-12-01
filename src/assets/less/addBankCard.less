@@ -1,0 +1,171 @@
+.addCard{
+  position: absolute;
+  display: block;
+  width: .8rem;
+  height: .8rem;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: .8rem;
+  font-size: .6rem;
+  text-indent: 0em !important;
+  color: white;
+  a{
+    background: none !important;
+    color: white;
+  }
+}
+.bm-container{
+  width: 100%;
+  //height: 100%;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  background: url("../images/bank_bg.png") no-repeat center;
+  background-size: 100%;
+  .bm-list-center{
+    width: 5.8rem;
+    height: 10rem;
+    overflow: scroll;
+    position: fixed;
+    top: 1rem;
+    left: .3rem;
+    &.bm-list-center::-webkit-scrollbar{
+      display: none;
+    }
+    ul{
+      li{
+        width: 5.888rem;
+        height: 2.219rem;
+        border-radius: 0.085rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .25rem;
+        &.card-bg1{
+          background: url("../images/bankbg_gs.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg2{
+          background: url("../images/bankbg_ny.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg3{
+          background: url("../images/bankbg_js.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg4{
+          background: url("../images/bankbg_zg.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg6{
+          background: url("../images/bankbg_zs.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg7{
+          background: url("../images/bankbg_jt.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.card-bg8{
+          background: url("../images/bankbg_yz.png") no-repeat center;
+          background-size: 100%;
+        }
+        .car-center{
+          width: 90%;
+          .card-top{
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .card-img{
+              width: 1rem;
+              img{
+                display: block;
+                width: 1rem;
+                height: auto;
+              }
+            }
+            .card-name-info{
+              width: 3rem;
+              .card-name{
+                font-size: 0.29rem;
+                color: #ffffff;
+              }
+              .card-type{
+                font-size: 0.205rem;
+                color: #ffffff;
+                margin-top: .1rem;
+              }
+            }
+            .card-delete{
+              width: .8rem;
+              height: .5rem;
+              text-align: right;
+              //line-height: .5rem;
+              span{
+                font-size: 0.205rem;
+                color: #ffffff;
+              }
+
+            }
+          }
+          .card-num{
+            font-size: 0.29rem;
+            color: #ffffff;
+            margin: .3rem 0 0 1.3rem;
+
+          }
+        }
+
+      }
+    }
+  }
+}
+.abc-container{
+  margin: 1rem auto .5rem;
+  background: white;
+  width: 92%;
+  height: auto;
+  padding: .2rem 4%;
+  .abc-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: .8rem;
+    border-bottom: 1px #e2e2e2 solid;
+    .abc-title{
+      display: block;
+      width:20%;
+      font-size: 0.239rem;
+      color: #222222;
+    }
+    input{
+      border: none;
+      height: .5rem;
+      font-size: .24rem;
+      width: 73%;
+    }
+    i{
+      float: right;
+    }
+  }
+}
+.abc-btn{
+  display: block;
+  margin: 0 auto .5rem;
+  width: 5.888rem;
+  height: 0.753rem;
+  background-color: #4f98f5;
+  border-radius: 0.085rem;
+  font-size: 0.27rem;
+  color: #ffffff;
+}
+.abc-popup{
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0%, 0, 0);
+
+}
+

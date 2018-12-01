@@ -1,0 +1,114 @@
+.earn-team-container{
+  width: 100%;
+  height: auto;
+  margin: 1rem auto 0;
+  //margin-top: 4rem;
+  .earn-team-head{
+    width: 100%;
+    height: auto;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    //position: fixed;
+    //top:.9rem;
+    span{
+      padding: .2rem;
+      font-size: .24rem;
+      border-bottom: 0.06rem #fff solid;
+      &.et-on{
+        color: #4f98f5;
+        border-bottom: 0.06rem #4f98f5 solid;
+      }
+    }
+  }
+  .earn-team-center{
+    width: 100%;
+    //position: fixed;
+    //top: 1.8rem;
+    margin-top: 0.2rem;
+    //background: red;
+    height: 9rem;
+    overflow: scroll;
+    &.earn-team-center::-webkit-scrollbar{
+      display: none;
+    }
+    .earn-team-list{
+      width: 94%;
+      padding: .1rem 3%;
+      background: white;
+      margin-bottom: .15rem;
+      p{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .1rem 0;
+        width: 95%;
+        margin: 0 auto;
+        span{
+          font-size: .25rem;
+          &.et-name{
+            font-size: 0.256rem;
+            color: #222222;
+          }
+          &.et-num{
+            font-size: 0.239rem;
+            font-weight: bolder;
+            color: #000000;
+          }
+          &.et-day{
+            font-size: 0.205rem;
+            color: #999999;
+            i{
+              color: #ff3b30;
+            }
+          }
+          &.et-time{
+            font-size: 0.205rem;
+            color: #999999;
+          }
+        }
+      }
+    }
+  }
+}
+.team-container{
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  .team-list{
+    width: 95%;
+    padding: .15rem 2.5%;
+    background: white;
+    margin-bottom: .15rem;
+    .team-name-tel,
+    .team-deg{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .1rem;
+      .t-name{
+        font-size: .25rem;
+        color: black;
+      }
+      .t-tel{
+        font-size: .26rem;
+        color: black;
+      }
+      .t-id{
+        font-size: .24rem;
+        span{
+          color: black;
+          font-weight: bolder;
+        }
+      }
+      .t-deg{
+        font-size: .26rem;
+        span{
+          font-style: italic;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

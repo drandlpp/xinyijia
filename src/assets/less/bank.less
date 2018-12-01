@@ -1,0 +1,119 @@
+.abc-bank-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  color: black;
+  .abc-bank-cancel{
+    width: 100%;
+    height: 100%;
+  }
+  .abc-card-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    padding: .2rem 3%;
+    background: white;
+    .abc-chose-card{
+      width: 100%;
+      height: auto;
+      .c-title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        span{
+          font-size: .25rem;
+          border-bottom: 2px white solid;
+          padding:0 .1rem .1rem;
+          box-sizing: border-box;
+          &.chose-on{
+            color: #ff3b30;
+            border-bottom: 0.05rem #ff3b30 solid;
+          }
+        }
+      }
+      .bank-info-container{
+        width: 100%;
+        height: 5.5rem;
+        position: relative;
+        overflow: hidden;
+        margin-top: .2rem;
+        .bank-info-center{
+          width: 12rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          overflow: hidden;
+          div{
+            width: 3rem;
+            height: 100%;
+            overflow-y: scroll;
+            //border-right: 1px #e2e2e2 solid;
+            //box-sizing: border-box;
+            p{
+              width: 95%;
+              text-align: left;
+              height: .6rem;
+              line-height: .6rem;
+              text-indent: 0.5em;
+              border-bottom: 1px solid #e6e6e6;
+              display: -webkit-box;
+              font-size: .26rem;
+              margin: 0 auto;
+              -webkit-line-clamp: 1;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+              -moz-webkit-box-orient: vertical;
+              -ms-webkit-box-orient: vertical;
+              -o-webkit-box-orient: vertical;
+              /* autoprefixer: on */
+              overflow: hidden;
+              &.ci-on {
+                background: url("../images/check.png") no-repeat center right;
+                background-size: auto .2rem;
+              }
+            }
+            &.bi-bank{
+              //background: red;
+            }
+            &.bi-pro{
+              //background: #c6bdff;
+              background: #f9f9f9;
+            }
+            &.bi-city{
+              //background: #25ffe6;
+            }
+            &.bi-dis{
+              //background: #8cff3e;
+              background: #f9f9f9;
+              p{
+                width: 95%;
+                text-align: left;
+                height: auto;
+                line-height: 0.4rem;
+                padding:.1rem 0 .1rem .2rem;
+                text-indent: 0;
+                border-bottom: 1px solid #e6e6e6;
+                display: -webkit-box;
+                font-size: 0.26rem;
+                margin: 0 auto;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

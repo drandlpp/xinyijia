@@ -1,0 +1,274 @@
+.shop-car-container{
+  width: 100%;
+  height: auto;
+  .shop-car-header{
+    width: 100%;
+    height: 1rem;
+    background: url("../images/shopcarHead.png") no-repeat center;
+    background-size: cover;
+  }
+  .shop-car-list-container{
+    position: fixed;
+    width: 94%;
+    height: 80%;
+    left: 3%;
+    top: 0.435rem;
+    overflow-y: scroll;
+    border-radius: 0.15rem;
+    &.shop-car-list-container::-webkit-scrollbar{
+      display: none;
+    }
+    .sc-store{
+      width: 100%;
+      height: auto;
+      border-radius: 0.15rem;
+      background: white;
+      padding-bottom: .3rem;
+      margin-bottom: .2rem;
+      .sc-store-name{
+        padding: .3rem .255rem;
+        font-size: 0.265rem;
+        color: #222222;
+        span{
+          color: #888888;
+        }
+      }
+      .sc-goods-container{
+        padding: 0 .2rem;
+        .sc-goods-list{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: .2rem;
+          .sc-goods-check{
+            width: 0.5rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .sc-goods-img{
+            width: 1.8rem;
+            img{
+              display: block;
+              max-width: 100%;
+              height: auto;
+            }
+          }
+          .sc-goods-detail{
+            width: 3rem;
+            .sc-goods-name{
+              font-size: 0.204rem;
+              color: #333333;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+              /* autoprefixer: on */
+            }
+            .sc-goods-type-del{
+              margin-top: 0.178rem;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              .sc-goods-type{
+                text-align: left;
+                font-size: 0.204rem;
+                line-height: 0.306rem;
+                color: #888888;
+                width: 2rem;
+                p{
+                  width: 100%;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  /* autoprefixer: off */
+                  -webkit-box-orient: vertical;
+                  /* autoprefixer: on */
+                }
+              }
+              .sc-goods-del{
+                width: 0.752rem;
+                button{
+                  width: 100%;
+                  height: 0.423rem;
+                  border-radius: 0.085rem;
+                  border: solid 1px #c3c3c3;
+                  background: none;
+                  outline: none;
+                  font-size: .22rem;
+                }
+              }
+
+            }
+            .sc-goods-price{
+              width: 100%;
+              height: auto;
+              margin-top: 0.1rem;
+              .scg-integral{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+              }
+              p{
+                font-size: 0.24rem;
+                line-height: 0.374rem;
+                color: #4f98f5;
+                *{
+                  vertical-align: middle;
+                }
+                u{
+                  text-decoration: none;
+                  margin-right: .04rem;
+                }
+                b{
+                  font-weight: normal;
+                  margin: 0 0.05rem;
+                }
+              }
+            }
+            .sc-goods-price-total{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              .sc-goods-price-money{
+                width: 1.8rem;
+                font-size: 0.25rem;
+                color: #ff3b30;
+                text-align: left;
+                span{
+                  font-size: .35rem;
+                  margin-right: 0.05rem;
+                  i{
+                    font-size: 0.25rem;
+                  }
+                }
+              }
+              .sc-goods-total{
+                width: 2.2rem;
+                height: .42rem;
+                display: flex;
+                margin-top: .1rem;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px #bbbbbb solid;
+                border-radius: .1rem;
+                overflow: hidden;
+                *{
+                  width: 31.3%;
+                  height: 100%;
+                  background: none;
+                  border: none;
+                  text-align: center;
+                  outline: none;
+                  display: block;
+                  padding: 0!important;
+                }
+                input{
+                  border-left: 1px #bbbbbb solid;
+                  border-right: 1px #bbbbbb solid;
+                  font-size: .28rem;
+                }
+                button{
+                  font-size: .3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .shop-car-clear{
+    width: 100%;
+    height: 0.939rem;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0.84rem;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: .939rem;
+    .sc-total-money{
+      width: 24%;
+      font-size: 0.255rem;
+      color: #232629;
+      span{
+        color: #ff3b30;
+        font-size: .27rem;
+        i{
+          font-size: .35rem;
+          margin: 0 0.05rem;
+        }
+      }
+    }
+    .sc-total-integral{
+      width: 38%;
+      height: 0.65rem;
+      border-left: 1px #e2e2e2 solid;
+      border-right: 1px #e2e2e2 solid;
+      font-size: .23rem;
+      .sc-t-integral{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+          line-height: .65rem;
+        }
+        *{
+          vertical-align: middle;
+        }
+      }
+      .sc-t-integral-and-money{
+        p{
+          line-height: .3rem;
+          color: #4f98f5;
+          *{
+            vertical-align: middle;
+          }
+          u{
+            text-decoration: none;
+          }
+          b{
+            font-weight: normal;
+            margin: 0 0.08rem;
+          }
+        }
+      }
+    }
+    .sc-clear-button{
+      width: 28%;
+      button{
+        width: 80%;
+        height: 0.637rem;
+        background-color: #4f98f5;
+        border-radius: 0.318rem;
+        border: none;
+        font-size: 0.255rem;
+        color: #ffffff;
+      }
+    }
+  }
+}
+input[type='radio']+label::before {
+  width:0.35rem;
+  height:0.35rem;
+  line-height: 0.35rem;
+  border: 1px #ccc solid;
+}
+input[type='radio']:checked+label::before {
+  color: #fff;/*对号的颜色*/
+  background: #2f90e1;
+}
+label{
+  color: black;
+}

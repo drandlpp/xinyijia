@@ -1,0 +1,121 @@
+.my-head-container{
+  width: 100%;
+  height: auto;
+  margin-bottom: .85rem;
+  .my-head{
+    width: 6.367rem;
+    height: 3.481rem;
+    background: url("../images/myHeadBg.png") no-repeat center;
+    background-size:100% 100%;
+    position: relative;
+    overflow: hidden;
+    .my-set-msg{
+      width: 5.866rem;
+      margin: 0.323rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .head-center{
+      width: 5.866rem;
+      height: 1.452rem;
+      margin: 0.509rem auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .user-head-img{
+        width: 1.443rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .user-info{
+        width: 3rem;
+        p{
+          padding-left: .17rem;
+          color: #ffffff;
+          &.user-info-name{
+            margin-top: .378rem;
+            font-size: 0.289rem;
+          }
+          &.user-info-deg{
+            margin-top: .1rem;
+            font-size: 0.187rem;
+          }
+        }
+      }
+      .user-code{
+        width: 0.75rem;
+        background: url("../images/Qr_code.png") no-repeat center;
+        background-size: 100% auto;
+        margin: 0 .2rem;
+      }
+      .user-big-code{
+        width: 0.2rem;
+        background: url("../images/right.png") no-repeat center;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .my-order-treasure{
+    width: 94%;
+    background-color: #ffffff;
+    padding: 0.272rem 3%;
+    margin-bottom: 0.17rem;
+    .my-order-treasure-title{
+      font-size: 0.289rem;
+      color: #222222;
+      margin-bottom: 0.301rem;
+      //font-weight: 500;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li{
+        p{
+          font-size: 0.234rem;
+          color: #666666;
+        }
+      }
+    }
+    div{
+      width: 5.841rem;
+      margin: 0 auto;
+      font-size: 0.234rem;
+      color: #666666;
+      padding: .2rem 0;
+      *{
+        vertical-align: middle;
+      }
+      i{
+        margin-right: .2rem;
+        &.fr{
+          margin: 0 ;
+        }
+      }
+    }
+  }
+}
+.regCode{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    display: block;
+    width: 60%;
+    height: auto;
+    border: .3rem white solid;
+    border-radius: .1rem;
+  }
+}

@@ -1,0 +1,570 @@
+// out:false
+@main-color: #3981ff;
+/*媒体查询条件*/
+@media (max-width: 1442px) {
+  html {
+      font-size: 225px;
+  }
+}
+@media (max-width: 1282px) {
+  html {
+      font-size: 200px;
+  }
+}
+@media (max-width: 1026px) {
+  html {
+      font-size: 160px;
+  }
+}
+@media (max-width: 962px) {
+  html {
+      font-size: 150px;
+  }
+}
+@media (max-width: 952px) {
+  html {
+      font-size: 148.4375px;
+  }
+}
+@media (max-width: 902px) {
+  html {
+      font-size: 140.625px;
+  }
+}
+@media (max-width: 802px) {
+  html {
+      font-size: 125px;
+  }
+}
+@media (max-width: 775px) {
+  html {
+      font-size: 120.78125px;
+  }
+}
+@media (max-width: 770px) {
+  html {
+      font-size: 120px;
+  }
+}
+@media (max-width: 738px) {
+  html {
+      font-size: 115px;
+  }
+}
+@media (max-width: 734px) {
+  html {
+      font-size: 114.375px;
+  }
+}
+@media (max-width: 733px) {
+  html {
+      font-size: 114.21875px;
+  }
+}
+@media (max-width: 669px) {
+  html {
+      font-size: 104.21875px;
+  }
+}
+@media (max-width: 642px) {
+  html {
+      font-size: 100px;
+  }
+}
+@media (max-width: 602px) {
+  html {
+      font-size: 93.75px;
+  }
+}
+@media (max-width: 570px) {
+  html {
+      font-size: 88.75px;
+  }
+}
+@media (max-width: 535px) {
+  html {
+      font-size: 83.28125px;
+  }
+}
+@media (max-width: 437px) {
+  html {
+      font-size: 67.96875px;
+  }
+}
+@media (max-width: 416px) {
+  html {
+      font-size: 64.6875px;
+  }
+}
+@media (max-width: 413px) {
+  html {
+      font-size: 64.21875px;
+  }
+}
+@media (max-width: 386px) {
+  html {
+      font-size: 60px;
+  }
+}
+@media (max-width: 377px) {
+  html {
+      font-size: 58.59375px;
+  }
+}
+@media (max-width: 362px) {
+  html {
+      font-size: 56.25px;
+  }
+}
+@media (max-width: 322px) {
+  html {
+      font-size: 50px;
+  }
+}
+
+body {
+  color: #2c3e50;
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+}
+i {font-style:normal}
+a {
+  color: #2c3e50;
+  text-decoration-line: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+ul,li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,pre,p {
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+select,input {
+  vertical-align: middle
+}
+select,input,textarea {
+  font-size: 12px;
+  margin: 0
+}
+textarea {
+    resize: none
+}
+table {
+    border-collapse: collapse
+}
+/*清除数字输入框箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -moz-appearance: textfield;
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type=submit]{
+  -webkit-appearance: none;
+}
+input[type=number]{
+  -webkit-appearance: none !important;
+  -moz-appearance: textfield;
+}
+input:focus {
+  outline: none;
+}
+input[type=button],
+input[type=submit],
+input[type=file],
+input[type=checkbox],
+input[type=radio],
+input[type=number],
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+}
+.wrapper{
+  overflow: hidden;
+  font-size: .24rem;
+  .mint-header{
+    background-color: #fff;
+    color: #333;
+    font-size: 0.28rem;
+    height: 0.85rem;
+  }
+}
+.tabbar{
+  display: flex;
+  justify-content: space-between;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear: bottom;
+}
+.icon{
+  display: inline-block;
+  background: url(../images/icon.png) no-repeat;
+  background-size: 3.41333rem 3.41333rem;
+  &.icon-index {
+    width: 0.512rem;
+    height: 0.512rem;
+    background-position: -0.512rem 0px;
+  }
+  &.icon-classify {
+    width: 0.512rem;
+    height: 0.512rem;
+    background-position: -0.512rem -0.512rem;
+  }
+  &.icon-shop-car {
+    width: 0.512rem;
+    height: 0.512rem;
+    background-position: -0.512rem -1.024rem;
+  }
+  &.icon-my {
+    width: 0.512rem;
+    height: 0.512rem;
+    background-position: -0.512rem -1.536rem;
+  }
+  &.icon-search {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem 0rem;
+  }
+  &.icon-x-integral{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -0.34133rem;
+  }
+  &.icon-x-integral-red{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -2.21567rem -0.34133rem;
+  }
+
+  &.icon-y-integral{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -0.6827rem;
+  }
+  &.icon-y-integral-red{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -2.21567rem -0.34133rem;
+  }
+  &.icon-msg {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.075rem -1.3653rem;
+  }
+  &.icon-set {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -1.024rem;
+  }
+  &.icon-detail-back {
+     width: 0.34133rem;
+     height: 0.34133rem;
+     background-position: -3.072rem -2.048rem;
+  }
+  &.icon-detail-car {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -2.3893rem;
+  }
+  &.icon-detail-store {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -2.731rem;
+  }
+  &.icon-detail-service {
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.072rem -3.075rem;
+  }
+  &.icon-right{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -3.075rem -1.70667rem;
+  }
+  &.icon-confirm-address{
+    width: 0.34133rem;
+    height: 0.34133rem;
+    background-position: -2.731rem -3.075rem;
+  }
+  &.icon-treasure{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -1.28rem;
+  }
+  &.icon-earnings{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -1.70667rem;
+  }
+  &.icon-team{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -2.1333rem;
+  }
+  &.icon-order{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -2.56rem;
+  }
+  &.icon-about{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem 0rem;
+  }
+  &.icon-address{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -0.42667rem;
+  }
+  &.icon-borrowing{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.6453rem -0.8533rem;
+  }
+  &.icon-pay-weChat{
+     width: 0.42667rem;
+     height: 0.42667rem;
+     background-position: -2.21567rem -2.98667rem;
+   }
+  &.icon-pay-integral-x{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.21567rem -2.56rem;
+  }
+  &.icon-pay-integral-y{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.21567rem -2.1333rem;
+  }
+  &.icon-pay-integral-x-weChat{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.21567rem -1.70667rem;
+  }
+  &.icon-pay-integral-y-weChat{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -2.21567rem -1.28rem;
+  }
+  &.icon-y-integral-white{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -1.792rem -2.56rem;
+  }
+  &.icon-x-integral-white{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -1.792rem -2.98667rem;
+  }
+  &.icon-withdrawRecord{
+     width: 0.42667rem;
+     height: 0.42667rem;
+     background-position: -1.792rem -2.1333rem;
+  }
+  &.icon-consumeRecord{
+    width: 0.42667rem;
+    height: 0.42667rem;
+    background-position: -1.792rem -1.70667rem;
+  }
+  /*
+    20px = 0.34133rem
+    25px = 0.42667rem
+    30px = 0.521rem
+    40px = 0.68267rem
+    50px = 0.8533rem
+    60px = 1.024rem
+    75px = 1.28rem
+    80px = 1.3653rem
+    90px = 1.536rem
+    100px = 1.70667rem
+    105px = 1.792rem
+    110px = 1.8773rem
+    120px = 2.048rem
+    125px = 2.1333rem
+    130px = 2.21567rem
+    140px = 2.3893rem
+    150px = 2.56rem
+    155px = 2.6453rem
+    160px = 2.731rem
+    160px = 2.731rem
+    175px = 2.98667rem
+    180px = 3.075rem
+    200px = 3.4133rem
+  */
+}
+.active {
+  .mint-tab-item-label {
+    color: #4f98f5;
+  }
+  .icon-index {
+    background-position: 0rem 0rem;
+  }
+  .icon-classify {
+    background-position: 0rem -0.512rem;
+  }
+  .icon-shop-car {
+    background-position: 0rem -1.024rem;
+  }
+  .icon-my {
+    background-position: 0rem -1.536rem;
+  }
+}
+.moduleHead{
+  background-color: #ffffff;
+  width: 100%;
+  height: .8rem;
+  text-align: left;
+  text-indent: 3.5em;
+  line-height: .85rem;
+  font-size: .29rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: #222222;
+  &.moduleHeadWhite{
+    color: #fff;
+    background: none;
+    a{
+      background: url('../images/back.png') no-repeat center;
+      background-size: auto .3rem;
+    }
+  }
+  a{
+    display: inline-block;
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    top: 0;
+    left: 0;
+    background: url('../images/back1.png') no-repeat center;
+    background-size: auto .3rem;
+  }
+}
+.add-more{
+  text-align: center;
+  font-size: .25rem;
+  padding-bottom: .2rem;
+  color: #999999;
+}
+.search-container{
+  width: 95%;
+  height: .478rem;
+  background: white;
+  padding: 0.137rem 2.5%;
+  line-height: .47rem;
+
+  span{
+    display: inline-block;
+    height: .47rem;
+    &.search-input{
+      width: 5.1rem;
+      background-color: #efeff4;
+      border-radius: 0.085rem;
+      *{
+        vertical-align: middle;
+      }
+    }
+    &.search-button{
+      font-size: 0.22rem;
+      color: #222222;
+    }
+    .icon{
+      margin-left: 0.145rem;
+      margin-right: 0.085rem;
+    }
+    u{
+      text-decoration: none;
+      color: #959499;
+      font-size: .222rem;
+    }
+  }
+}
+input[type='radio']+label::before,
+input[type='checkbox']+label::before{
+  content:'\a0';/*不换行空格*/
+  display: inline-block;
+  vertical-align: .01rem;
+  width:0.3rem;
+  height:0.3rem;
+  margin-right: .05rem;
+  border-radius:50%;
+  background: none;/*复选框的背景色*/
+  text-indent:0.15em;
+  line-height: 0.3rem;
+  border: 1px white solid;
+}
+input[type='radio'],
+input[type='checkbox']{
+  /*隐藏掉原先实际的 checkbox 框，之所以没用 display:none; 这种简单直接的方式，是因为这种方法会把它从键盘 tab 键切换焦点的队列中完全删除*/
+  position: absolute;
+  clip:rect(0,0,0,0);
+}
+input[type='radio']:checked+label::before,
+input[type='checkbox']:checked+label::before{
+  content:'\2713'; /*对号的 Unicode字符*/
+  color: #2f90e1;/*对号的颜色*/
+  background: white;
+  font-size: .3rem;
+  font-weight: bolder;
+}
+label{
+  font-size: .24rem;
+  color: white;
+}
+.container-no-data{
+  width: 100%;
+  height: auto;
+  margin: 1.18rem 0;
+  img{
+    display: block;
+    width: 3.997rem;
+    height: 4.005rem;
+    margin: 0 auto;
+  }
+  p{
+    text-align: center;
+    &.no-data-txt1{
+      font-size: 0.289rem;
+      color: #232629;
+    }
+    &.no-data-txt2{
+      font-size: 0.221rem;
+      color: #888888;
+      margin-top: .28rem;
+    }
+  }
+}
+input:disabled{
+  background: none;
+}
