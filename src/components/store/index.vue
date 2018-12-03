@@ -12,7 +12,12 @@
       </swiper>
       <div class="index-classify">
         <ul>
-          <li v-for="(cl, index) in claList" :key="index"><router-link :to="/classify/ + cl.id + '/' + index"><img :src="imgUrl+cl.logo" alt=""><span>{{cl.name}}</span></router-link></li>
+          <li v-for="(cl, index) in claList" :key="index">
+						<router-link :to="/classify/ + cl.id + '/' + index">
+							<img :src="imgUrl+cl.logo" alt="">
+							<span>{{cl.name}}</span>
+						</router-link>
+					</li>
           <li><router-link to="/classify/0/0"><img src="../../assets/images/all.png" alt=""><span>全部</span></router-link></li>
         </ul>
       </div>
@@ -57,14 +62,14 @@
 								</li>
 							</ul>
 						</div>
-						<!--  中间的广告 -->
-            <div class="ft1-ad">
-							<a :href="ft1_ad.href">
-              <img :src="imgUrl+ft1_ad.pic" alt="">
-							</a>
-            </div>
           </div>
         </div>
+					<!--  中间的广告 -->
+				<div class="ft1-ad" v-if="ft1_ad">
+					<a :href="[ft1_ad.href]">
+						<img :src="imgUrl+ft1_ad.pic" alt="">
+					</a>
+				</div>
         <div class="each-floor">
           <div class="floor-title ft3">
             <p>会员专区</p>
@@ -166,7 +171,7 @@
         bandList: [],
         claList:[],
         searchBG:false,
-				ft1_ad:''
+				ft1_ad:[]
       }
     },
     computed: {
@@ -237,7 +242,10 @@
         });
 				api.getAd()
 				.then(res=>{
+					if(res.code==200){
+					console.log(this.ft1_ad);
 					this.ft1_ad = res.data[0];
+					}
 				});
 				
       api.getZone({
@@ -261,9 +269,12 @@
         })
       api.getClassify(0)
         .then(res => {
+					console.log(res);
           for (var i in res.data) {
+						console.log(i);
             if (i <= 3) {
               this.claList.push(res.data[i])
+							console.log(this.claList);
             }
           }
         });
@@ -272,11 +283,11 @@
           // console.log(res)
           this.marqueeList = res.data;
           // console.log(this.marqueeList)
-        })
+        });
       api.getFloor()
         .then(res => {
           // console.log(res)
-        })
+        });
     },
   }
 </script>
